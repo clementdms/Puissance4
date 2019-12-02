@@ -1,0 +1,15 @@
+.Joueur1, .Joueur2 {
+    width: 60px;
+    height: 60px;
+    border: solid black 1px;
+    border-radius: 50%;
+    transition: background-color 1s;
+}
+
+.Joueur1{
+    background: red;
+}
+
+.Joueur2{
+    background:yellow;
+}

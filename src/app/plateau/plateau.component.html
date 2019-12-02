@@ -1,0 +1,11 @@
+<h1>PUISSANCE 4</h1>
+<table>
+    <tbody>
+        <tr *ngFor="let L of getPlateau();let x=index">
+            <td *ngFor="let C of L;let y=index"
+                (click)='joue(x,y)'>
+                <app-pion *ngIf="!estVide(C)" [joueur]="C"></app-pion>
+            </td>
+        </tr>
+    </tbody>
+</table>

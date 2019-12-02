@@ -1,0 +1,11 @@
+<div *ngIf='partieEnCours()'>
+    <h3> La partie est <b>en cours</b> </h3>
+    <p *ngIf='j1Joue()'>C'est aux rouges de jouer</p>
+    <p *ngIf='!j1Joue()'>C'est aux jaunes de jouer</p>
+</div>
+
+<div *ngIf='!partieEnCours()'>
+    <h3> La partie est <b>terminé</b> !</h3>
+    <p *ngIf='!j1Joue()'>Belle victoire des rouges !</p>
+    <p *ngIf='j1Joue()'>Belle victoire des jaunes !</p>
+</div>
